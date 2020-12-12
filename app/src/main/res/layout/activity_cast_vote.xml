@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CastVoteActivity"
+    android:background="#404040">
+
+
+
+    <TextView
+        android:id="@+id/textViewCast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Choose Candidate!"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/white"/>
+
+    <ListView
+        android:id="@+id/choose_listCast"
+        android:layout_width="404dp"
+        android:layout_height="365dp"
+        android:layout_below="@id/textViewCast" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/choiceCast"
+        android:textColor="#fff"
+        android:background="#aaa"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@id/choose_listCast"
+        android:layout_toRightOf="@+id/choiceTextViewCast"
+        android:layout_toEndOf="@+id/choiceTextViewCast"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/choiceTextViewCast"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Enter preferred candidate's ID:"
+        android:layout_below="@id/choose_listCast"/>
+
+    <Button
+        android:id="@+id/castVoteCast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choiceTextViewCast"
+        android:layout_centerHorizontal="true"
+        android:text="Cast Vote" />
+</RelativeLayout>

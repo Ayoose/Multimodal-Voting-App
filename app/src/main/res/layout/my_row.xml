@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#aaa"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/start_photo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/bill_gates"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star_id"
+        android:text="1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/star_idTxt"
+        android:layout_toEndOf="@+id/star_idTxt"
+        android:textColor="#fff"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="7dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star_idTxt"
+        android:text="ID:"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/start_photo"
+        android:layout_toEndOf="@+id/start_photo"
+        android:textColor="#fff"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="7dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star_name"
+        android:text="Bill Gates"
+        android:layout_below="@+id/star_id"
+        android:layout_toRightOf="@+id/star_nameTxt"
+        android:layout_toEndOf="@+id/star_nameTxt"
+        android:textColor="#fff"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="7dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star_nameTxt"
+        android:text="Name:"
+        android:layout_below="@+id/star_idTxt"
+        android:layout_toRightOf="@+id/start_photo"
+        android:layout_toEndOf="@+id/start_photo"
+        android:textColor="#fff"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="7dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star_vote"
+        android:text="1000"
+        android:layout_below="@+id/star_name"
+        android:layout_toRightOf="@+id/star_nameTxt"
+        android:layout_toEndOf="@+id/star_nameTxt"
+        android:textColor="#fff"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="7dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star_voteTxt"
+        android:text="Votes:"
+        android:layout_below="@+id/star_nameTxt"
+        android:layout_toRightOf="@+id/start_photo"
+        android:layout_toEndOf="@+id/start_photo"
+        android:textColor="#fff"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="7dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</RelativeLayout>
