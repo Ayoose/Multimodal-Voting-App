@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myvote">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2797276862641376~4701320276"/>
+
+        <activity android:name=".CastVoteActivity"
+            android:label="Cast Vote Page"></activity>
+        <activity
+            android:name=".LiveVoteActivity"
+            android:label="Live Vote Page"
+            android:parentActivityName=".AdminHomeActivity" />
+        <activity android:name=".CreateCandActivity"
+            android:label="Create Candidate Page"/>
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".AdminHomeActivity"
+            android:label="Admin Home Page"/>
+        <activity android:name=".AdminActivity"
+            android:label="Admin Login Page"/>
+        <activity android:name=".HomeActivity"
+            android:label="Voter Home Page"/>
+        <activity android:name=".MainActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".SMSReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>
