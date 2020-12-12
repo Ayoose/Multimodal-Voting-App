@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyVote</string>
+    <string name="admin_log">Sign in as <i><b><u>Admin</u></b></i></string>
+</resources>
